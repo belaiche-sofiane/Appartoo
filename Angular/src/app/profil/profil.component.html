@@ -1,0 +1,45 @@
+<section id="header" class="jumbotron text-center">
+	<h1 class="display-3" style="color:orangered"> Modfication de Profil</h1>
+
+</section>
+<div class="container">
+<div *ngFor="let pro of profile">
+<form (ngSubmit)="updateprofil(pro)" #ProfilForm="ngForm" >
+	<div class="form-row">
+	  <div class="col-md-4 mb-3">
+		<label for="validationDefault01"> Nom</label>
+		<input type="text" class="form-control" id="validationDefault01"   [(ngModel)]="pro.nom"     name="nom" />
+		<br/> 
+	  </div>
+	  <div class="col-md-4 mb-3">
+		<label for="validationDefault02">Famille</label>
+		<input type="text" class="form-control" id="validationDefault02" [(ngModel)]="pro.famille" name="famille" required>
+	  </div>
+	  <div class="col-md-4 mb-3">
+		<label for="validationDefaultUsername"> Race</label>
+		<div class="input-group">
+		  
+		  <input type="text" class="form-control" id="validationDefaultUsername"aria-describedby="inputGroupPrepend2" [(ngModel)]="pro.race"  name="race"required>
+		</div>
+	  </div>
+	</div>
+	<div class="form-row">
+	  <div class="col-md-3 mb-3">
+		<label for="validationDefault03"> Nourriture</label>
+		<input type="text" class="form-control" id="validationDefault03" [(ngModel)]="pro.nourriture" name="nourriture" required>
+	  </div>
+	  <div class="col-md-3 mb-3">
+		<label for="validationDefault04">Age</label>
+		<input type="text" class="form-control" id="validationDefault04" [(ngModel)]="pro.age" name="age" required>
+	  </div>
+	  <div class="col-md-6 mb-3">
+		<label for="validationDefault04">Lien de la photo</label>
+		<input type="text" class="form-control" id="validationDefault04" [(ngModel)]="pro.photo" name="photo" required>
+	  </div>
+	</div>
+
+	<button class="btn btn-primary" type="submit" > Enregistrer</button>
+  </form>
+</div>	
+</div>  
+

@@ -1,0 +1,42 @@
+
+<div id=container>
+    <form (ngSubmit)="onSubmit()" #inscriptionForm1="ngForm">
+      <label for="nom"> Lien de la photo</label>
+      <input type="text" class="form-control" placeholder="Lien de la photo" required [(ngModel)]="utilisateur['photo']" name="photo" />
+    <br/>
+        <label for="nom"> Nom </label>
+        <input type="text" class="form-control" placeholder="Nom" required [(ngModel)]="utilisateur['nom']" name="nom" />
+      <br/>
+       
+      
+        <label> Age </label>
+        <input type="text" class="form-control" placeholder="Age" required [(ngModel)]="utilisateur['age']" name="age" />
+    
+    <br/>
+      <label> Famille </label>
+    <input type="text" class="form-control" placeholder="Famille" required [(ngModel)]="utilisateur['famille']" name="famille" />
+    
+    <br/>
+    
+    <label> Race </label>
+    <input type="text" class="form-control" placeholder="Race" required [(ngModel)]="utilisateur['race']" name="race" />
+    
+    <br/>
+    <label> Nourriture </label>
+    <input type="text" class="form-control" placeholder="Nourriture" required [(ngModel)]="utilisateur['nourriture']" name="nourriture" />
+    
+    <br/>
+    <label> Email </label>
+      <input type="text" class="form-control" placeholder="email.." required [(ngModel)]="utilisateur['email']" name="email" />
+    <br/>
+      <label> Mot de passe </label>
+      <input type="password" class="form-control" placeholder="mot de passe.." required [(ngModel)]="utilisateur['password']" name="password" />
+    <br/>
+    
+      <input type="submit" class="btn btn-outline-primary " value="Enregistrer"/>
+      
+    </form>
+    
+    <p> {{message}} </p>
+    
+    </div>

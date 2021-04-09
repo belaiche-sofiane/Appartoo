@@ -1,0 +1,50 @@
+<!--Main layout-->
+<main class="mt-5 pt-4">
+    <div class="container dark-grey-text mt-5">
+      <!--Grid row-->
+      <div class="row wow fadeIn">
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+          <img src="{{ profil._value.photo }}" class="img-fluid" alt="" />
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+          <!--Content-->
+          <div class="p-4">
+            <div class="mb-3">
+              <a href="">
+                <span class="badge purple mr-1"
+                  >Nom: {{ profil._value.nom}}</span
+                >
+              </a>
+            </div>
+  
+            <p class="lead">
+              <span class="mr-1"> <b>Age:</b> {{ profil._value.age }} </span>
+            </p>
+  
+            <p class="lead">
+                <span class="mr-1"> <b>Nourriture:</b> {{ profil._value.nourriture }} </span>
+              </p>
+              <p class="lead">
+                <span class="mr-1"> <b>Race:</b> {{ profil._value.race }} </span>
+              </p>
+              <p class="lead">
+                <span class="mr-1"> <b>Famille:</b> {{ profil._value.famille }} </span>
+              </p>
+              <p class="lead">
+                <span class="mr-1"> <b> Email: </b> {{ profil._value.email }} </span>
+              </p>
+              <button class="btn btn-outline-success btn-sm" > <a routerLink="/accueil">Retour  </a></button>
+          </div>
+          <!--Content-->
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+  
+      <hr />
+    </div>
+  </main>

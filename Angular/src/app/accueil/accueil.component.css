@@ -1,0 +1,17 @@
+#header {
+	background: url(/assets/img.gif) center center / cover no-repeat ;
+  }
+ img {
+    width: 100%;
+    height: 100%;
+    filter: blur(0px) grayscale(0);
+    transition: filter 0.5s ease-out;
+}
+.card:hover {
+    z-index: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#boutton:hover{
+    text-transform: uppercase;
+}
